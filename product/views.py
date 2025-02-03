@@ -51,7 +51,7 @@ class Productupdate(View):
 
         return render(request,'productupdate.html',{'form':form})
     
-    def post(self,request,kwargs):
+    def post(self,request,**kwargs):
 
         id=kwargs.get("pk")
 
